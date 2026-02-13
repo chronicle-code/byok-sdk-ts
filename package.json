@@ -1,5 +1,5 @@
 {
-  "name": "@byok/sdk",
+  "name": "@byok-gg/sdk",
   "version": "0.1.0",
   "description": "TypeScript SDK for the BYOK API — AI-powered NPC interactions for games",
   "license": "MIT",
