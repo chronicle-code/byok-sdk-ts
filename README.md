@@ -1,4 +1,4 @@
-# @byok/sdk
+# @byok-gg/sdk
 
 TypeScript SDK for the [BYOK](https://byok.gg) API — AI-powered NPC interactions for games.
 
@@ -11,13 +11,13 @@ TypeScript SDK for the [BYOK](https://byok.gg) API — AI-powered NPC interactio
 ## Install
 
 ```bash
-npm install @byok/sdk
+npm install @byok-gg/sdk
 ```
 
 ## Quickstart
 
 ```typescript
-import { ByokClient } from "@byok/sdk";
+import { ByokClient } from "@byok-gg/sdk";
 
 const client = new ByokClient({
   apiKey: "byok_sk_...",
@@ -140,7 +140,7 @@ import {
   AuthenticationError,
   RateLimitError,
   PaymentRequiredError,
-} from "@byok/sdk";
+} from "@byok-gg/sdk";
 
 try {
   await client.chat.create({ messages: [{ role: "user", content: "Hi" }] });
