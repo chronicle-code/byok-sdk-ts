@@ -193,6 +193,22 @@ export interface WalletResponse {
   quality_preference: string | null;
 }
 
+// ── Wallet Checkout ──
+
+export interface CheckoutRequest {
+  /** Amount in cents (100-50000). e.g. 1000 = $10.00 */
+  amount_cents: number;
+  /** Custom success redirect URL. Defaults to BYOK's hosted success page. */
+  success_url?: string;
+  /** Custom cancel redirect URL. Defaults to BYOK's hosted cancel page. */
+  cancel_url?: string;
+}
+
+export interface CheckoutResponse {
+  /** Stripe Checkout session URL. Open this in a browser/webview for the player to complete payment. */
+  checkout_url: string;
+}
+
 // ── Player Profile ──
 
 export interface PlayerProfileDimensions {

@@ -49,6 +49,8 @@ export type {
   PlayerState,
   UpdateStateRequest,
   WalletResponse,
+  CheckoutRequest,
+  CheckoutResponse,
   PlayerProfileDimensions,
   PlayerProfileResponse,
   HighlightParams,
